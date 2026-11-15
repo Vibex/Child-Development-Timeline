@@ -1,2 +1,2 @@
-Category,, Demographic,, Title,, Content,, Start,, End,, Duration,, Citation
-Gender,, Typical Male,, Pre Natal Hormones,, Typical males experience a 4 month burst of testosterone prenattally ending in the second trimester. This is the mechanism causing sexual dymorphism in babies and creating male genetalia.,, -28,, -13,, 15, Christia Spears Brown, Biefeld, S. D, & Tam, M. J. (2020). Gender in childhood. Cambridge University Press.
+Category,, Demographic,, Title,, Content,, Start Value,, Start Text,, End Value,, End Text,, Duration Text,, Citation
+Gender,, Typical Male,, Pre Natal Hormones,, Typical males experience a 4 month burst of testosterone prenattally ending in the second trimester. This is the mechanism causing sexual dymorphism in babies and creating male genetalia.,, -28,, A -13,, Second Trimester,, 15,, Christia Spears Brown, Biefeld, S. D, & Tam, M. J. (2020). Gender in childhood. Cambridge University Press.
