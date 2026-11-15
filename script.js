@@ -53,7 +53,8 @@ function handleCSVResult(csvString) {
   var icon = '<i class="lni-cake"></i>';
   
   // Iterate over each row
-  for (var i = 0; i < rows.length; i++) {
+  // Stars i at 1 to skip the header for the CSV
+  for (var i = 1; i < rows.length; i++) {
     var row = rows[i];
     
     // split row to cells
