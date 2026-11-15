@@ -71,11 +71,27 @@ h2 {
 }
 .timeline__event__title {
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.6;
   text-transform: uppercase;
   font-weight: 600;
   color: #9251ac;
   letter-spacing: 1.5px;
+}
+.timeline__event__subtitle {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #525f7f;
+  letter-spacing: 1px;
+}
+.timeline__event__citation {
+  position: relative;
+  top: 5px;
+  font-size: .8rem;
+  line-height: .9;
+  font-weight: italic;
+  color: #525f7f;
 }
 .timeline__event__content {
   padding: 20px;

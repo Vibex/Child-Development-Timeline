@@ -34,11 +34,17 @@ function handleCSVResult(csvString) {
   var contentPrefix = '<div class="timeline__event__description"><p>';
   // The div class to prepend to the citation
   var citationPrefix = '<div class="timeline__event__citation">';
+  // The div class to prepend to the citation link
+  var citationLinkPrefix = '<a href="';
+  // the div suffix to append to the citation link, this comes after the citationLinkPrefix and citationLink but before citation and lSuffix and genSuffix
+  var citationLinkPrefixSuffix = 'url">';
 
   // The default div closure
   var genSuffix = '</div>';
-  // The default div closure for paragraphs
+  // The div closure for paragraphs
   var pSuffix = '</p>';
+  // The div closure for links
+  var lSuffix = '</a>';
 
 
   // Delim for Demographic and Duration
@@ -68,7 +74,7 @@ function handleCSVResult(csvString) {
 
     
     // Add extracted CSV data to string
-    htmlStr += eventPrefix + iconPrefix + icon + genSuffix + stampPrefix + startText + genSuffix + boxPrefix + titlePrefix + title + genSuffix + subtitlePrefix + demographic + delim + durationText + genSuffix + contentPrefix + content + pSuffix + genSuffix + citationPrefix + citation + genSuffix + genSuffix + genSuffix;
+    htmlStr += eventPrefix + iconPrefix + icon + genSuffix + stampPrefix + startText + genSuffix + boxPrefix + titlePrefix + title + genSuffix + subtitlePrefix + demographic + delim + durationText + genSuffix + contentPrefix + content + pSuffix + genSuffix + citationPrefix + citationLinkPrefix + citationLink + citationLinkPrefixSuffix + citation + lSuffix + genSuffix + genSuffix + genSuffix;
     //htmlStr = 'TEST';
   }
   
