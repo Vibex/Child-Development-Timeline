@@ -37,7 +37,7 @@ function handleCSVResult(csvString) {
   // The div class to prepend to the citation link
   var citationLinkPrefix = '<a href="';
   // the div suffix to append to the citation link, this comes after the citationLinkPrefix and citationLink but before citation and lSuffix and genSuffix
-  var citationLinkPrefixSuffix = 'url">';
+  var citationLinkPrefixSuffix = '">';
 
   // The default div closure
   var genSuffix = '</div>';
