@@ -19,7 +19,7 @@ function handleCSVResult(csvString) {
 
   // FORMATTING VARIABLES
   // The div class to prepend to the totality of the information
-  var eventPrefix = '<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">';
+  var eventPrefix = '<div class="timeline__event timeline__event--type3">';
   // The div class to prepend to the icon
   var iconPrefix = '<div class="timeline__event__icon ">';
   // The div class to prepend to the timestamp
