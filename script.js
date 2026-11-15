@@ -19,7 +19,7 @@ function handleCSVResult(csvString) {
 
   // FORMATTING VARIABLES
   // The div class to prepend to the totality of the information
-  var eventPrefix = '<div class="timeline__event animated fadeInUp delay-1s timeline__event--type1">';
+  var eventPrefix = '<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">';
   // The div class to prepend to the icon
   var iconPrefix = '<div class="timeline__event__icon ">';
   // The div class to prepend to the timestamp
@@ -28,13 +28,21 @@ function handleCSVResult(csvString) {
   var boxPrefix = '<div class="timeline__event__content ">';
   // The div class to prepend to the title
   var titlePrefix = '<div class="timeline__event__title">';
+  // The div class to prepend to the sub title
+  var subtitlePrefix = '<div class="timeline__event__subtitle">';
   // The div class to prepend to the content
   var contentPrefix = '<div class="timeline__event__description"><p>';
+  // The div class to prepend to the citation
+  var citationPrefix = '<div class="timeline__event__citation">';
+
   // The default div closure
   var genSuffix = '</div>';
   // The default div closure for paragraphs
   var pSuffix = '</p>';
 
+
+  // Delim for Demographic and Duration
+  var delim = ' ● ';
   // Default Icon
   var icon = '<i class="lni-cake"></i>';
   
@@ -56,10 +64,11 @@ function handleCSVResult(csvString) {
     var endText = cells[7];
     var durationText = cells[8];
     var citation = cells[9];
+    var citationLink = cells[10];
 
     
     // Add extracted CSV data to string
-    htmlStr += eventPrefix + iconPrefix + icon + genSuffix + stampPrefix + startText + genSuffix + boxPrefix + titlePrefix + title + genSuffix + contentPrefix + content + pSuffix + genSuffix + genSuffix + genSuffix;
+    htmlStr += eventPrefix + iconPrefix + icon + genSuffix + stampPrefix + startText + genSuffix + boxPrefix + titlePrefix + title + genSuffix + subtitlePrefix + demographic + delim + durationText + genSuffix + contentPrefix + content + pSuffix + genSuffix + citationPrefix + citation + genSuffix + genSuffix + genSuffix;
     //htmlStr = 'TEST';
   }
   
